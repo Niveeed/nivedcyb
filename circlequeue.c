@@ -5,7 +5,7 @@ int main()
 	for( ; ; )
 	{
 		printf("\n");
-		printf(" 1. enqueue \n 2. dequeue \n 3. display \n 4. exit \n ");
+		printf(" 1. insert \n 2. delete \n 3. display \n 4. exit \n ");
 		printf("enter your choice");
 		scanf("%d",&ch);
 		if (ch==1)
