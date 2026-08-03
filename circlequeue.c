@@ -5,22 +5,20 @@ int main()
 	for( ; ; )
 	{
 		printf("\n");
-		printf(" 1. insert \n 2. delete \n 3. display \n 4. exit \n ");
+		printf(" 1. enqueue \n 2. dequeue \n 3. display \n 4. exit \n ");
 		printf("enter your choice");
 		scanf("%d",&ch);
 		if (ch==1)
-		{ 
-		
-			//for(i=0;i<MAX;i++)
-			//{
-				printf("enter element");
-				scanf("%d",&item);
-				if (FRONT==-1 && REAR==-1)
-				{
-					FRONT=0;
-					REAR=0;
-					q[REAR]=item;
-				}
+		{
+		    printf("enter element");
+	        scanf("%d",&item);
+			if (FRONT==-1 && REAR==-1)
+			{
+			    FRONT=0;
+			    REAR=0;
+				q[REAR]=item;
+			    
+			}
 				else if (FRONT==(REAR+1)% MAX)
 				{
 					printf("overflow");
@@ -30,7 +28,6 @@ int main()
 					REAR=(REAR+1)%MAX;
 					q[REAR]=item;
 				}
-			//}
 		}
 		else if (ch==2)
 		{
@@ -84,7 +81,3 @@ int main()
 		}
 	}
 }
-
-
-
-
